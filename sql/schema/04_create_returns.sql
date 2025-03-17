@@ -1,3 +1,5 @@
+USE fashion_store;
+
 CREATE TABLE OrderReturn (
     id INT PRIMARY KEY AUTO_INCREMENT,
     order_id INT NOT NULL,
@@ -7,7 +9,7 @@ CREATE TABLE OrderReturn (
     general_reason TEXT,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     processed_at DATETIME,
-    FOREIGN KEY (order_id) REFERENCES Order(id) ON DELETE CASCADE
+    FOREIGN KEY (order_id) REFERENCES Orders(id) ON DELETE CASCADE
 );
 
 CREATE TABLE OrderItemReturn (

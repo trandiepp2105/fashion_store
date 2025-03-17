@@ -1,3 +1,5 @@
+USE fashion_store;
+
 -- Create Role table
 CREATE TABLE Role (
     id INT PRIMARY KEY AUTO_INCREMENT,

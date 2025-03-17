@@ -1,3 +1,5 @@
+USE fashion_store;
+
 -- STEP 1: Insert Products for leaf categories (categories without child categories)
 
 INSERT INTO Product (supplier_id, name, description, price, created_at)

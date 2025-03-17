@@ -1,3 +1,5 @@
+USE fashion_store;
+
 CREATE TABLE Coupon (
     id INT PRIMARY KEY AUTO_INCREMENT,
     code VARCHAR(50) UNIQUE,
@@ -15,6 +17,6 @@ CREATE TABLE OrderCoupon (
     order_id INT NOT NULL,
     coupon_id INT NOT NULL,
     PRIMARY KEY (order_id, coupon_id),
-    FOREIGN KEY (order_id) REFERENCES Order(id) ON DELETE CASCADE,
+    FOREIGN KEY (order_id) REFERENCES Orders(id) ON DELETE CASCADE,
     FOREIGN KEY (coupon_id) REFERENCES Coupon(id) ON DELETE CASCADE
 );

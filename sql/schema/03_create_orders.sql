@@ -8,7 +8,8 @@ CREATE TABLE CartItem (
     FOREIGN KEY (variant_id) REFERENCES ProductVariant(id) ON DELETE CASCADE
 );
 
-CREATE TABLE Order (
+USE fashion_store;
+CREATE TABLE Orders (
     id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT,
     total_amount INT,
@@ -24,7 +25,7 @@ CREATE TABLE OrderItem (
     variant_id INT,
     quantity INT,
     price INT,
-    FOREIGN KEY (order_id) REFERENCES Order(id) ON DELETE CASCADE,
+    FOREIGN KEY (order_id) REFERENCES Orders(id) ON DELETE CASCADE,
     FOREIGN KEY (variant_id) REFERENCES ProductVariant(id) ON DELETE SET NULL
 );
 
@@ -36,5 +37,5 @@ CREATE TABLE Payment (
     status ENUM('Pending', 'Paid', 'Failed', 'Refunded'),
     paid_at DATETIME,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (order_id) REFERENCES Order(id) ON DELETE CASCADE
+    FOREIGN KEY (order_id) REFERENCES Orders(id) ON DELETE CASCADE
 );

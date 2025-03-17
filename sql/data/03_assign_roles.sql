@@ -1,3 +1,5 @@
+USE fashion_store;
+
 -- Assign Admin Role to Admin User
 INSERT INTO UserRole (user_id, role_id) 
 VALUES (

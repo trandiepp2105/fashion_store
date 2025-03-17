@@ -1,3 +1,5 @@
+USE fashion_store;
+
 -- Add parent category: Men
 INSERT INTO Category (name, description) VALUES ('Men', 'Men Fashion');
 SET @men_id = LAST_INSERT_ID();
@@ -46,7 +48,6 @@ INSERT INTO Category (parent_id, name) VALUES
 (@accessories_id, 'Socks'),
 (@accessories_id, 'Ties');
 
--------------------------------------------------
 
 -- Add parent category: Women
 INSERT INTO Category (name, description) VALUES ('Women', 'Women Fashion');
