@@ -1,0 +1,1 @@
+-- Select Shipping.Sql Query Placeholder

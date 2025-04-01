@@ -1,0 +1,1 @@
+-- Delete Order.Sql Query Placeholder

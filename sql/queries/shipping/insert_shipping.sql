@@ -1,0 +1,1 @@
+-- Insert Shipping.Sql Query Placeholder

@@ -4,13 +4,14 @@ CREATE TABLE Coupon (
     id INT PRIMARY KEY AUTO_INCREMENT,
     code VARCHAR(50) UNIQUE,
     description TEXT,
-    type ENUM('percent', 'fixed'),
+    type ENUM('PERCENTAGE', 'FIXED'),
     value INT,
     min_order_value INT,
     discount_limit INT,
-    usage_limit INT,
     start_date DATETIME,
-    end_date DATETIME
+    end_date DATETIME,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
 CREATE TABLE OrderCoupon (

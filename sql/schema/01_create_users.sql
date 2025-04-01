@@ -37,7 +37,7 @@ CREATE TABLE ShippingInfo (
     district VARCHAR(255),
     ward_commune VARCHAR(255),
     specific_address TEXT,
-    phone_number VARCHAR(12),
+    phone_number VARCHAR(20),
     is_default BOOLEAN DEFAULT FALSE,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
     updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,

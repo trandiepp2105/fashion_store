@@ -14,11 +14,11 @@ CREATE TABLE OrderReturn (
 
 CREATE TABLE OrderItemReturn (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    order_return_id INT NOT NULL,
+    order_return_id INT NOT NULL ,
     order_item_id INT,
     quantity_returned INT,
     refund_amount INT,
     return_reason TEXT,
     FOREIGN KEY (order_return_id) REFERENCES OrderReturn(id) ON DELETE CASCADE,
-    FOREIGN KEY (order_item_id) REFERENCES OrderItem(id) ON DELETE SET NULL
+    FOREIGN KEY (order_item_id) REFERENCES OrderItem(id) ON DELETE CASCADE
 );

@@ -1,0 +1,1 @@
+-- Select Payment.Sql Query Placeholder

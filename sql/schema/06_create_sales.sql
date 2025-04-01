@@ -4,10 +4,12 @@ CREATE TABLE Sale (
     id INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255) NOT NULL,
     description TEXT,
-    type ENUM('percent', 'fixed') NOT NULL,
+    type ENUM('PERCENTAGE', 'FIXED') NOT NULL,
     value INT NOT NULL,
     start_date DATETIME NOT NULL,
-    end_date DATETIME NOT NULL
+    end_date DATETIME NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 
 CREATE TABLE SaleProduct (

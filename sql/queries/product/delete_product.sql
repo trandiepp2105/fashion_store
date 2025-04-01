@@ -1,0 +1,1 @@
+-- Delete Product.Sql Query Placeholder

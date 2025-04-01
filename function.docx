@@ -1,0 +1,84 @@
+Chức Năng Của Hệ Thống Quản Lý Cửa Hàng Thời Trang Online
+
+1. Quản lý người dùng
+
+Đăng ký người dùng.
+
+Cập nhật thông tin người dùng.
+
+Kích hoạt/Khóa tài khoản.
+
+Gán vai trò cho người dùng.
+
+2. Quản lý sản phẩm và danh mục
+
+Thêm sản phẩm mới.
+
+Chỉnh sửa thông tin sản phẩm.
+
+Xóa sản phẩm.
+
+Thêm danh mục sản phẩm.
+
+Sắp xếp sản phẩm theo danh mục.
+
+Xem danh sách sản phẩm kèm danh mục.
+
+3. Quản lý giỏ hàng
+
+Thêm sản phẩm vào giỏ hàng.
+
+Xóa sản phẩm khỏi giỏ hàng.
+
+Cập nhật số lượng sản phẩm trong giỏ hàng.
+
+4. Quản lý đơn hàng
+
+Tạo đơn hàng mới.
+
+Xem danh sách đơn hàng của người dùng.
+
+Cập nhật trạng thái đơn hàng.
+
+Hủy đơn hàng.
+
+5. Quản lý thanh toán
+
+Tạo giao dịch thanh toán.
+
+Kiểm tra trạng thái thanh toán.
+
+Cập nhật thông tin thanh toán.
+
+6. Quản lý khuyến mãi và mã giảm giá
+
+Thêm chương trình giảm giá.
+
+Thêm mã giảm giá.
+
+Kiểm tra tính hợp lệ của mã giảm giá.
+
+7. Quản lý vận chuyển
+
+Thêm địa chỉ giao hàng.
+
+Cập nhật địa chỉ giao hàng.
+
+Xem danh sách địa chỉ giao hàng của người dùng.
+
+8. Quản lý nhà cung cấp
+
+Thêm nhà cung cấp mới.
+
+Cập nhật thông tin nhà cung cấp.
+
+Lọc danh sách nhà cung cấp theo trạng thái.
+
+9. Quản lý đổi/trả hàng
+
+Yêu cầu hoàn trả đơn hàng.
+
+Cập nhật trạng thái xử lý đơn hàng hoàn trả.
+
+Kiểm tra số lượng sản phẩm hoàn trả hợp lệ.
+
