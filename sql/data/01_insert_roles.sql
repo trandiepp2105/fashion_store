@@ -2,7 +2,7 @@
 USE fashion_store;
 
 INSERT INTO Role (name, description) VALUES 
-('admin', 'Administrator with full access'),
-('staff', 'Staff member with limited access'),
-('customer', 'Normal customer');
+('ADMIN', 'Administrator with full access'),
+('STAFF', 'Staff member with limited access'),
+('CUSTOMER', 'Normal customer');
 

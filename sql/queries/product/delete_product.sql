@@ -1,1 +1,2 @@
--- Delete Product.Sql Query Placeholder
+DELETE FROM products
+WHERE id = :product_id;

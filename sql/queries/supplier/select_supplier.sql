@@ -1,1 +1,2 @@
--- Select Supplier.Sql Query Placeholder
+SELECT * 
+FROM fashion_store.supplier;
