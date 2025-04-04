@@ -1,7 +1,7 @@
 CREATE PROCEDURE UpdatePayment(
     IN payment_id INT,
-    IN new_status ENUM('PENDING', 'PAID', 'FAILED', 'CANCELLED') DEFAULT NULL,
-    IN new_paid_at DATETIME DEFAULT NULL
+    IN new_status ENUM('PENDING', 'PAID', 'FAILED', 'CANCELLED'),
+    IN new_paid_at DATETIME
 )
 BEGIN
     UPDATE fashion_store.Payment

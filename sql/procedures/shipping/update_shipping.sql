@@ -1,12 +1,12 @@
 CREATE PROCEDURE UpdateShippingInfo(
     IN shipping_id INT,
-    IN new_recipient_name VARCHAR(50) DEFAULT NULL,
-    IN new_province_city VARCHAR(255) DEFAULT NULL,
-    IN new_district VARCHAR(255) DEFAULT NULL,
-    IN new_ward_commune VARCHAR(255) DEFAULT NULL,
-    IN new_specific_address TEXT DEFAULT NULL,
-    IN new_phone_number VARCHAR(20) DEFAULT NULL,
-    IN new_is_default BOOLEAN DEFAULT NULL
+    IN new_recipient_name VARCHAR(50),
+    IN new_province_city VARCHAR(255),
+    IN new_district VARCHAR(255),
+    IN new_ward_commune VARCHAR(255),
+    IN new_specific_address TEXT,
+    IN new_phone_number VARCHAR(20),
+    IN new_is_default BOOLEAN
 )
 BEGIN
     UPDATE fashion_store.ShippingInfo

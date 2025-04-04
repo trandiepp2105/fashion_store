@@ -1,8 +1,8 @@
 CREATE PROCEDURE UpdateOrderReturn(
     IN return_id INT,
-    IN new_status ENUM('Pending', 'Completed', 'Refunded', 'Rejected') DEFAULT NULL,
-    IN new_total_refund INT DEFAULT NULL,
-    IN new_processed_at DATETIME DEFAULT NULL
+    IN new_status ENUM('Pending', 'Completed', 'Refunded', 'Rejected'),
+    IN new_total_refund INT,
+    IN new_processed_at DATETIME
 )
 BEGIN
     UPDATE fashion_store.OrderReturn
