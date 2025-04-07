@@ -13,5 +13,5 @@ BEGIN
         final_amount = COALESCE(new_final_amount, final_amount),
         status = COALESCE(new_status, status),
         updated_at = CURRENT_TIMESTAMP
-    WHERE id = new_order_id;
+    WHERE id = order_id;
 END;
